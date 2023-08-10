@@ -16,14 +16,15 @@ func PartOne() int32 {
 		firstCompartment := bag[:len(bag)/2]
 		secondCompartment := bag[len(bag)/2:]
 		for _, item := range firstCompartment {
-			//println(item)
 			if strings.Contains(secondCompartment, string(item)) {
 				if item >= 97 && item <= 122 {
 					sum += item - 96
+					break
 				}
 
 				if item >= 65 && item <= 90 {
 					sum += item - 38
+					break
 				}
 			}
 		}
@@ -33,5 +34,3 @@ func PartOne() int32 {
 }
 
 //func PartTwo() int {}
-
-//func calcValueOfItem()
