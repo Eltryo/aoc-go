@@ -14,7 +14,6 @@ func main() {
 }
 
 func PartOne() {
-	//file, err := os.Open("day05/input")
 	file, err := os.Open("input")
 	if err != nil {
 		log.Fatal(err)
