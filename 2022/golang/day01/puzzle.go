@@ -29,7 +29,7 @@ func PartOne() int {
 		sum += calories
 	}
 
-	return max
+  return max
 }
 
 func PartTwo() int {
